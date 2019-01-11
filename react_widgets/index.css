@@ -47,10 +47,10 @@ input[type="submit"] {
 }
 
 
-.clock{
+.clock {
   position: absolute;
   left: 50%;
-  width: 300px;
+  width: 400px;
   margin-left: -150px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 700;
@@ -58,10 +58,39 @@ input[type="submit"] {
   background-color: lightblue;
   padding: 30px;
   border: 2px solid pink;
+
+  box-sizing: border-box;
   /* display: flex; */
   /* justify-content: center; */
 }
 
 .clock p{
   margin-left: 20px;
+}
+.tabs {
+  position: absolute;
+  left: 50%;
+  width: 400px;
+  top: 120px;
+  margin-left: -150px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: lightblue;
+  border: 2px solid pink;
+  box-sizing: border-box;
+}
+.tab-headers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 1px solid black;
+
+}
+.tab-header {
+  padding: 5px;
+  width: 100%;
+}
+.tab-headers .selected {
+  border-bottom: none;
 }
