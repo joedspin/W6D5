@@ -3,7 +3,7 @@ import React from 'react';
 class TestWidget extends React.Component {
   constructor(props) {
     super(props);
-    console.log('hello');
+    // console.log('hello');
   }
 
   render() {
