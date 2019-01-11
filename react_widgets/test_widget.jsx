@@ -1,6 +1,7 @@
 import React from 'react';
 import Clock from './frontend/clock';
 import Tabs from './frontend/tabs';
+import Weather from './frontend/weather';
 
 class TestWidget extends React.Component {
   constructor(props) {
@@ -16,6 +17,7 @@ class TestWidget extends React.Component {
       <>
         <Clock />
         <Tabs titleContent ={tc}/>
+        <Weather />
       </>
     )
   }
