@@ -17,6 +17,24 @@
   <link rel="stylesheet" href="css/10-posts.css" type="text/css">
   <link rel="stylesheet" href="css/11-icons.css" type="text/css">
   <link rel="stylesheet" href="css/12-modal.css" type="text/css">
+
+<script src="../shared/js/jquery.js"></script>
+<script>
+  $(function () {
+
+    $("body").on("click", ".js-modal-open", function (event) {
+      event.preventDefault();
+      $(".modal").addClass("is-open");
+    });
+
+    $("body").on("click", ".js-modal-close", function (event) {
+      event.preventDefault();
+      $(".modal").removeClass("is-open");
+    });
+
+  });
+</script>
+
 </head>
 <body>
 
@@ -231,6 +249,29 @@
     </ul>
 
   </footer>
+  <section class="modal">
+    <section class="modal-screen">
+      
+    </section>
+    <section class="modal-form submit">
+      <div class="close-button">&times;</div>
+      <h1>Welcome</h1>
+      <p>Please sign in to continue</p>
 
+      <div class="input">
+        <label for="email">Email</label>
+        <input id="email" type="text" value="sennacy@appacademy.io">
+      </div>
+      <div class="input">
+        <label for="password">Password</label>
+        <input id="password" type="password" value="starwars">
+      </div>
+
+      <div class="submit">
+        <button>Sign In</button>
+        <span class="button-alternative">or <strong>Cancel</strong></span>
+      </div>
+    </section>
+  </section>
 </body>
 </html>
